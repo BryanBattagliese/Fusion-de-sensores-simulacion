@@ -22,6 +22,9 @@ El MiniPi puede trabajar de diferentes maneras:
 
 Se le pasa al robot MiniPi una serie de instrucciones simples, que debe ejecutar en serie. Una vez finalizado, muestra lo que pudo mapear (es capaz de mostrar el mapeo en "tiempo real") 📍.
 
+Mapeo realizado:
+![Simulación Mapeo](images/image3.PNG)
+
 Las instrucciones simples que entiende nuestro robot son:  
 - `avanzar_1_celda` 🔄
 - `girar_der` ➡️
@@ -31,7 +34,6 @@ Las instrucciones simples que entiende nuestro robot son:
 [🔗 Biblioteca de funciones: minipi_lib.py](minipi_lib.py)
 
 ![Planificación de Instrucciones](images/image2.PNG)
-![Simulación Mapeo](images/image3.PNG)
 
 ### 🅱️ - Brindándole solamente la celda destino (en proceso) 🔄
 
