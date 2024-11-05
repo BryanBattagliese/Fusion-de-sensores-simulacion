@@ -28,7 +28,7 @@ Las instrucciones simples que entiende nuestro robot son:
 - `girar_izq` ⬅️
 - `centrar` 🎯
 
-[🔗 Archivo de funciones: minipi_lib.py](minipi_lib.py)
+[🔗 Biblioteca de funciones: minipi_lib.py](minipi_lib.py)
 
 ![Planificación de Instrucciones](images/image2.PNG)
 ![Simulación Mapeo](images/image3.PNG)
@@ -45,9 +45,9 @@ El objetivo es que el robot MiniPi reciba solamente la celda a donde debería ll
 
 - **fusion_de_sensores.py**: Es el archivo principal en Python. Aquí se conecta con el simulador y ejecuta lo que se le indique. *(Dentro del "if")*
 
-  *💡 Nota: Las primeras líneas de código en estos dos programas son variables necesarias, importación de librerías, y obtención de los controladores (handlers) de todos los componentes del robot en el simulador.*
-
 - **minipi_lib.py**: Biblioteca de funciones que adaptan las funcionalidades del simulador para poder ser utilizadas en nuestro programa .py.
+
+  *💡 Nota: Las primeras líneas de código en estos dos programas son variables necesarias, importación de librerías, y obtención de los controladores (handlers) de todos los componentes del robot en el simulador.*
 
 - **mapa.py**: Programa creado utilizando **Matplotlib**, con el objetivo de mostrar los mapeos realizados por el MiniPi en forma de mapas/laberintos.
 
