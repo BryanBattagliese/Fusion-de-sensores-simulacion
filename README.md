@@ -1,1 +1,1 @@
-# fusion_de_sensores_simulacion
+# Fusion de sensores: ambiente "simulado"
