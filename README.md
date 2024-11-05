@@ -34,7 +34,7 @@ Las instrucciones simples que entiende nuestro robot son:
 
 ![Planificación de Instrucciones](images/image2.PNG)
 
-[🔗 Video: explicacion sobre este caso ]([https://drive.google.com/drive/u/1/folders/12zJ5vjxvh2zVTYYdRhmViyMfVNERXbT4](https://drive.google.com/drive/u/1/folders/1jOXsJzJ1Tr4iW5LoqXvL4d1WHVyuWoES))
+[🔗 Video: explicacion sobre este caso ](https://drive.google.com/drive/u/1/folders/1jOXsJzJ1Tr4iW5LoqXvL4d1WHVyuWoES)
 
 ### 🅱️ - Brindándole solamente la celda destino (en proceso) 🔄
 
