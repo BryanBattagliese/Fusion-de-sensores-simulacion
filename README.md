@@ -1,5 +1,5 @@
 # 🚀 Fusión de Sensores: Entorno Simulado
-**Bryan A. Battagliese Montiel - GIAR UTNBA 2024**
+**[Bryan A. Battagliese Montiel](https://www.linkedin.com/in/bryan-battagliese-5a868627b/) - [GIAR UTN FRBA 2024](https://linktr.ee/giarutn?fbclid=PAZXh0bgNhZW0CMTEAAaYG3taTLmEOIiv-Z8yuxECL3pAB_2dw4--xXbzYpIDobJ7wusQPSweCSHA_aem_6bu8xvLWcwnQb9IsmBceXw)**
 
 ## 🛠️ Entorno de Trabajo
 
@@ -63,5 +63,6 @@ El objetivo es que el robot MiniPi reciba solamente la celda a donde debería ll
 
 *💡 Nota: Actualmente se encuentra en desarrollo un algoritmo que permita la búsqueda y ejecución del mejor camino para llegar desde una celda A hasta una celda destino B (caso "B" mencionado anteriormente).* 🔍
 
-## Mira una ejecución 🎬 
-🔗[Ejecucion completa(mapeo+navegación)](https://drive.google.com/drive/u/1/folders/1jOXsJzJ1Tr4iW5LoqXvL4d1WHVyuWoES)
+## Links relacionados 
+🎬[Ejecucion completa(mapeo+navegación)](https://drive.google.com/drive/u/1/folders/1jOXsJzJ1Tr4iW5LoqXvL4d1WHVyuWoES)
+🎬[Presentación del proyecto "Fusion de sensores"](https://www.youtube.com/watch?v=KTsziHjEZVk&t=2013s)
