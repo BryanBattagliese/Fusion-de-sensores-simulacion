@@ -65,4 +65,5 @@ El objetivo es que el robot MiniPi reciba solamente la celda a donde debería ll
 
 ## Links relacionados 
 🎬[Ejecucion completa(mapeo+navegación)](https://drive.google.com/drive/u/1/folders/1jOXsJzJ1Tr4iW5LoqXvL4d1WHVyuWoES)
+
 🎬[Presentación del proyecto "Fusion de sensores"](https://www.youtube.com/watch?v=KTsziHjEZVk&t=2013s)
