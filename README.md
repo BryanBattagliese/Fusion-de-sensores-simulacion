@@ -63,4 +63,4 @@ El objetivo es que el robot MiniPi reciba solamente la celda a donde debería ll
 *💡 Nota: Actualmente se encuentra en desarrollo un algoritmo que permita la búsqueda y ejecución del mejor camino para llegar desde una celda A hasta una celda destino B (caso "B" mencionado anteriormente).* 🔍
 
 ## Mira una ejecución 🎬 
-![Ejecucion del MINIPI](videos/minipi-ejecucion.gif) 
+![Ejecucion del MINIPI](https://github.com/BryanBattagliese/Fusion-de-sensores-simulacion/blob/main/example) 
