@@ -64,4 +64,4 @@ El objetivo es que el robot MiniPi reciba solamente la celda a donde debería ll
 *💡 Nota: Actualmente se encuentra en desarrollo un algoritmo que permita la búsqueda y ejecución del mejor camino para llegar desde una celda A hasta una celda destino B (caso "B" mencionado anteriormente).* 🔍
 
 ## Mira una ejecución 🎬 
-![Ejecucion completa(mapeo+navegación)](https://drive.google.com/drive/u/1/folders/1jOXsJzJ1Tr4iW5LoqXvL4d1WHVyuWoES)
+🔗[Ejecucion completa(mapeo+navegación):](https://drive.google.com/drive/u/1/folders/1jOXsJzJ1Tr4iW5LoqXvL4d1WHVyuWoES)
