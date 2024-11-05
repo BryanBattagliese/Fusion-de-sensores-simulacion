@@ -1,5 +1,5 @@
 # Fusión de Sensores: Entorno Simulado
-**Bryan A. Battagliese - GIAR UTNBA 2024 **
+**Bryan A. Battagliese - GIAR UTNBA 2024**
 
 ## Entorno de Trabajo
 
