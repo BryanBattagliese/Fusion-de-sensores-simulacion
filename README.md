@@ -10,7 +10,7 @@ En nuestro caso, elegimos **Python** por su facilidad y flexibilidad, además de
 Basado en las premisas del **Robot Planning**, contamos con un espacio estructurado con mosaicos/celdas (en este caso elegimos un tamaño de 5x5). [🔗 Fusion de sensores - MINIPI.ttt](path/to/Fusion_de_sensores_MINIPI.ttt).
 
 El robot utilizado es una representación del **MiniPi** 🤖. Este cuenta con 4 sensores de ultrasonido (uno en cada cara del cubo); 4 sensores de línea; y un "force-sensor" encargado de mover sus 2 ruedas.  
-![MiniPi Componentes](images/image1.png)
+![MiniPi Componentes](images/image1.PNG)
 
 ## 🎯 Objetivo del Trabajo
 
@@ -30,8 +30,8 @@ Las instrucciones simples que entiende nuestro robot son:
 
 [🔗 Archivo de funciones: minipi_lib.py](path/to/minipi_lib.py)
 
-![Planificación de Instrucciones](images/image2.png)
-![Simulación Mapeo](images/image3.png)
+![Planificación de Instrucciones](images/image2.PNG)
+![Simulación Mapeo](images/image3.PNG)
 
 ### 🅱️ - Brindándole solamente la celda destino (en proceso) 🔄
 
