@@ -37,7 +37,7 @@ Las instrucciones simples que entiende nuestro robot son:
 
 El objetivo es que el robot MiniPi reciba solamente la celda a donde debería llegar y lo haga por el "mejor camino".
 
-*Nota:* En cualquiera de los casos, si el MiniPi detecta algún obstáculo o algo que impidiera seguir con su ejecución, se frena y espera que se le indiquen los pasos a seguir desde la consola de desarrollador.
+*Nota: En cualquiera de los casos, si el MiniPi detecta algún obstáculo o algo que impidiera seguir con su ejecución, se frena y espera que se le indiquen los pasos a seguir desde la consola de desarrollador.*
 
 ## Información sobre los Archivos del Repositorio
 
@@ -45,7 +45,7 @@ El objetivo es que el robot MiniPi reciba solamente la celda a donde debería ll
 
 - **fusion_de_sensores.py**: Es el archivo principal en Python. Aquí se conecta con el simulador y ejecuta lo que se le indique. *(Dentro del "if")*
 
-  *Nota:* Las primeras líneas de código en estos dos programas son variables necesarias, importación de librerías, y obtención de los controladores (handlers) de todos los componentes del robot en el simulador.
+  *Nota: Las primeras líneas de código en estos dos programas son variables necesarias, importación de librerías, y obtención de los controladores (handlers) de todos los componentes del robot en el simulador.*
 
 - **minipi_lib.py**: Biblioteca de funciones que adaptan las funcionalidades del simulador para poder ser utilizadas en nuestro programa .py.
 
@@ -58,4 +58,4 @@ El objetivo es que el robot MiniPi reciba solamente la celda a donde debería ll
 
   Estos últimos cuatro son archivos de configuración necesarios para la vinculación del simulador CoppelliaSIM con el programa en Python.
 
-*Nota:* Actualmente se encuentra en desarrollo un algoritmo que permita la búsqueda y ejecución del mejor camino para llegar desde una celda A hasta una celda destino B (caso "B" mencionado anteriormente).
+*Nota: Actualmente se encuentra en desarrollo un algoritmo que permita la búsqueda y ejecución del mejor camino para llegar desde una celda A hasta una celda destino B (caso "B" mencionado anteriormente).*
