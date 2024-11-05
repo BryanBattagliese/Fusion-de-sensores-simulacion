@@ -7,7 +7,7 @@ Actualmente utilizamos **CoppelliaSIM**, un software de simulación robótica qu
 
 En nuestro caso, elegimos **Python** por su facilidad y flexibilidad, además de la amplia variedad de bibliotecas accesibles 🐍.
 
-Basado en las premisas del **Robot Planning**, contamos con un espacio estructurado con mosaicos/celdas (en este caso elegimos un tamaño de 5x5). [🔗 Fusion de sensores - MINIPI.ttt]([Fusion_de_sensores_MINIPI.ttt](https://github.com/BryanBattagliese/fusion_de_sensores_simulacion/blob/main/Fusion%20de%20sensores%20-%20MINIPI.ttt)).
+Basado en las premisas del **Robot Planning**, contamos con un espacio estructurado con mosaicos/celdas (en este caso elegimos un tamaño de 5x5). [🔗 Fusion de sensores - MINIPI.ttt](https://github.com/BryanBattagliese/fusion_de_sensores_simulacion/blob/main/Fusion%20de%20sensores%20-%20MINIPI.ttt).
 
 El robot utilizado es una representación del **MiniPi** 🤖. Este cuenta con 4 sensores de ultrasonido (uno en cada cara del cubo); 4 sensores de línea; y un "force-sensor" encargado de mover sus 2 ruedas.  
 ![MiniPi Componentes](images/image1.PNG)
