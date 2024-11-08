@@ -43,9 +43,10 @@ H_linea_C_izq = 0
 H_linea_der = 0 
 H_linea_C_der = 0
 
-mapeo = 'mapeador.txt'
-ultimo_mapa = 'ultimo_mapa.txt'
-mapa_anterior = 'mapa_anterior.txt'
+mapeo = 'data/mapeador.txt'
+ultimo_mapa = 'data/ultimo_mapa.txt'
+mapa_anterior = 'data/mapa_anterior.txt'
+binario = 'data/binario.txt'
 
 #========================================================
 #                       Funciones
@@ -1310,7 +1311,7 @@ def analizarEntorno():
    #return (print('\nEn la posicion(x,y,z):', get_posicion(), '\nHay paredes en (del,atr,der,izq):', (del_result, atr_result, der_result, izq_result)))
    #return(del_result, atr_result, der_result, izq_result)
    
-    with open('mapeador.txt', 'a') as archivo:
+    with open(mapeo, 'a') as archivo:
         archivo.write(','.join(map(str, ((x,y,z),(del_result, atr_result, der_result, izq_result),('\n')))))
    
 class Celda:
@@ -1354,7 +1355,7 @@ def mapear():
 
         if all(v in [0, 1] for v in [norte, sur, este, oeste]):
             # Formato nuevo: "CXX-Nv-Sv-Ev-Ov"
-            with open('mapeador.txt', "a") as archivo:
+            with open(mapeo, "a") as archivo:
                 archivo.write(f"C{celdaActual.id:02d}-{celdaActual.norte}-{celdaActual.sur}-{celdaActual.este}-{celdaActual.oeste}\n")
         else:
             print(f"Datos inválidos para la celda: {celdaActual.coordenadas}")
@@ -1364,7 +1365,7 @@ def mapear():
 def distancia_a_la_pared():
     return distancia(H_uS_adelante)*100
 
-import mapa
+import mapeo.mapa as mapa
 
 def limpiar_archivo(file_path):
     with open(file_path, 'w') as archivo:
@@ -1372,15 +1373,15 @@ def limpiar_archivo(file_path):
 
 def guardar_mapa_final():
     # Leer los datos del archivo de mapeo actual
-    with open('mapeador.txt', 'r') as archivo:
+    with open(mapeo, 'r') as archivo:
         contenido = archivo.read()
     
     # Guardar el contenido en el archivo de último mapa
-    with open('ultimo_mapa.txt', 'w') as archivo:
+    with open(ultimo_mapa, 'w') as archivo:
         archivo.write(contenido)
     
     # Limpiar el archivo de mapeo
-    limpiar_archivo('mapeador.txt')
+    limpiar_archivo(mapeo)
     
 def convertir_a_binario(input_path, output_path):
     """
@@ -1458,6 +1459,8 @@ def ejecuctar_planificacion(lista_de_acciones):
                         lista_de_acciones.append((lambda: girar_izq(), 3))
                     elif instruccion == '4':
                         lista_de_acciones.append((lambda: centrar(), 4))
+                    elif instruccion == '5':
+                        lista_de_acciones.append((lambda: set_orientacion(), 5))
 
                 # Reiniciar el índice para continuar desde el inicio de las nuevas acciones
                 i = 0
@@ -1473,7 +1476,7 @@ def ejecuctar_planificacion(lista_de_acciones):
         i += 1
 
     # Guardar el mapa final y limpiar el archivo de mapeo
-    convertir_a_binario(mapeo, 'binario.txt')
+    convertir_a_binario(mapeo, binario)
     mapa.mapas_finales(mapeo, ultimo_mapa)
     mapa.superponer_mapas(mapeo, ultimo_mapa)
     guardar_mapa_final()
@@ -1572,5 +1575,11 @@ def determinar_celda_actual():
     celda = Celda((x, y))
 
     return celda
+
+def determinar_celda(celda):
+
+    celda = Celda()
+    return (celda.coordenadas())
+
 # ==============================
     

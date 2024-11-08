@@ -16,8 +16,8 @@ import time
 import math
 import numpy as np
 import minipi_lib as robot
-import mapa
-import dijkstra as dj
+import mapeo.mapa as mapa
+import a_star.a_star_adapter as adapter
 
 #========================================================
 #                       Constantes
@@ -57,29 +57,16 @@ H_linea_C_der = 0
 #                 Programa principal
 #========================================================
 
-PLANIFICACION = [
-    (lambda: robot.avanzar_1_celda(VEL_AVANCE), 1),
-    (lambda: robot.avanzar_1_celda(VEL_AVANCE), 1),
-    (lambda: robot.avanzar_1_celda(VEL_AVANCE), 1),
-    (lambda: robot.avanzar_1_celda(VEL_AVANCE), 1),
-    (lambda: robot.girar_izq(), 3),
-    (lambda: robot.avanzar_1_celda(VEL_AVANCE), 1),
-    (lambda: robot.girar_izq(), 3),
-    (lambda: robot.avanzar_1_celda(VEL_AVANCE), 1),
-    (lambda: robot.avanzar_1_celda(VEL_AVANCE), 1),
-    (lambda: robot.avanzar_1_celda(VEL_AVANCE), 1),
-    (lambda: robot.avanzar_1_celda(VEL_AVANCE), 1),
-    (lambda: robot.girar_der(), 2)
-
-]
-
 if robot.conectar():
     
-    robot.mapear()
-    robot.ejecuctar_planificacion(PLANIFICACION)
-    
-    time.sleep(2)
-    robot.desconectar()
+   inicio = (0,0)
+   final  = (4,4)
+   plani  = adapter.generar_instrucciones(inicio, final)
+   
+   robot.ejecuctar_planificacion(plani)
+
+   time.sleep(2)
+   robot.desconectar()
        
 else:
     print('No se pudo conectar')
