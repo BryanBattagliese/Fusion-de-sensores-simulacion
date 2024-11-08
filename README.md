@@ -18,7 +18,7 @@ El objetivo principal es tener un entorno simulado en el cual el robot MiniPi se
 
 El MiniPi puede trabajar de diferentes maneras:
 
-### 🅰️ - Recibiendo instrucciones sobre el camino a realizar
+### 🅰️ - Recibiendo instrucciones concretas sobre el camino a realizar
 
 Se le pasa al robot MiniPi una serie de instrucciones simples, que debe ejecutar en serie. Una vez finalizado, muestra lo que pudo mapear (es capaz de mostrar el mapeo en "tiempo real") 📍.
 
@@ -36,9 +36,9 @@ Las instrucciones simples que entiende nuestro robot son:
 
 [🔗 Video: explicacion sobre este caso ](https://drive.google.com/drive/u/1/folders/1jOXsJzJ1Tr4iW5LoqXvL4d1WHVyuWoES)
 
-### 🅱️ - Brindándole solamente la celda destino (en proceso) 🔄
+### 🅱️ - Brindándole al robot su celda inicial y su celda destino 
 
-El objetivo es que el robot MiniPi reciba solamente la celda a donde debería llegar y lo haga por el "mejor camino".
+Se ha desarrollado un algoritmo de tipo "A-STAR" con el objetivo que a raiz de un laberinto conocido, se pueda calcular cual es el mejor camino para llegar al destino.
 
 *💡 Nota: En cualquiera de los casos, si el MiniPi detecta algún obstáculo o algo que impidiera seguir con su ejecución, se frena y espera que se le indiquen los pasos a seguir desde la consola de desarrollador.*
 
@@ -52,7 +52,7 @@ El objetivo es que el robot MiniPi reciba solamente la celda a donde debería ll
 
   *💡 Nota: Las primeras líneas de código en estos dos programas son variables necesarias, importación de librerías, y obtención de los controladores (handlers) de todos los componentes del robot en el simulador.*
 
-- **mapa.py**: Programa creado utilizando **Matplotlib**, con el objetivo de mostrar los mapeos realizados por el MiniPi en forma de mapas/laberintos.
+- **mapeo/mapa.py**: Programa creado utilizando **Matplotlib**, con el objetivo de mostrar los mapeos realizados por el MiniPi en forma de mapas/laberintos.
 
 - **remoteApi.dll**
 - **remoteApi.so**
