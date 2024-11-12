@@ -16,11 +16,12 @@ El robot utilizado es una representación del **MiniPi** 🤖. Este cuenta con 4
 
 El objetivo principal es tener un entorno simulado en el cual el robot MiniPi sea capaz de llegar desde una celda A hasta una celda B, mapeando su entorno y reconociendo paredes/obstáculos a través de sus sensores de ultrasonido 🛑. Es importante poder recolectar estos datos y representarlos 📊.
 
-El MiniPi puede trabajar de diferentes maneras:
+El MiniPi puede trabajar de dos diferentes maneras:
 
-### 🅰️ - Recibiendo instrucciones concretas sobre el camino a realizar
+### 🅰️ - "Acatando ordenes concretas"
 
 Se le pasa al robot MiniPi una serie de instrucciones simples, que debe ejecutar en serie. Una vez finalizado, muestra lo que pudo mapear (es capaz de mostrar el mapeo en "tiempo real") 📍.
+En caso de no poder cumplir con alguna de sus instrucciones, frena y pregunta por consola que debe hacer.
 
 ![Simulación Mapeo](images/image3.PNG)
 
@@ -36,9 +37,14 @@ Las instrucciones simples que entiende nuestro robot son:
 
 [🔗 Video: explicacion sobre este caso ](https://drive.google.com/drive/u/1/folders/1jOXsJzJ1Tr4iW5LoqXvL4d1WHVyuWoES)
 
-### 🅱️ - Brindándole al robot su celda inicial y su celda destino 
+### 🅱️ - "Siendo independiente"
 
-Se ha desarrollado un algoritmo de tipo "A-STAR" con el objetivo que a raiz de un laberinto conocido, se pueda calcular cual es el mejor camino para llegar al destino.
+Se ha desarrollado un algoritmo de tipo "A-STAR" con el objetivo de que el MINIPI sea capaz de poder calcular la mejor ruta para llegar desde 'A' hasta 'B'.
+
+¿Por que A-STAR?
+-> Es muy eficiente: utiliza una heurística (distancia Manhattan) para calcular la distancia a un objetivo/celda, evitando caminos innecesarios. La heuristica funciona como una "pista" sobre la ubicacion del objetivo.
+-> Tiempo de busqueda reducido: comparandolo con un algoritmo de tipo Dijkstra.
+-> Perfecto para laberintos pequeños: consume poca memoria; busca solamente el camino mas corto en lugar de calcular rutas a TODOS los nodos (Dijkstra).
 
 *💡 Nota: En cualquiera de los casos, si el MiniPi detecta algún obstáculo o algo que impidiera seguir con su ejecución, se frena y espera que se le indiquen los pasos a seguir desde la consola de desarrollador.*
 
