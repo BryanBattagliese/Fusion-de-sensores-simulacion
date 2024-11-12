@@ -42,9 +42,9 @@ Las instrucciones simples que entiende nuestro robot son:
 Se ha desarrollado un algoritmo de tipo "A-STAR" con el objetivo de que el MINIPI sea capaz de poder calcular la mejor ruta para llegar desde 'A' hasta 'B'.
 
 ¿Por que A-STAR?
-**-> Es muy eficiente: utiliza una heurística (distancia Manhattan) para calcular la distancia a un objetivo/celda, evitando caminos innecesarios. La heuristica funciona como una "pista" sobre la ubicacion del objetivo.
-**-> Tiempo de busqueda reducido: comparandolo con un algoritmo de tipo Dijkstra.
-**-> Perfecto para laberintos pequeños: consume poca memoria; busca solamente el camino mas corto en lugar de calcular rutas a TODOS los nodos (Dijkstra).
+**- Es muy eficiente: utiliza una heurística (distancia Manhattan) para calcular la distancia a un objetivo/celda, evitando caminos innecesarios. La heuristica funciona como una "pista" sobre la ubicacion del objetivo.
+**- Tiempo de busqueda reducido: comparandolo con un algoritmo de tipo Dijkstra.
+**- Perfecto para laberintos pequeños: consume poca memoria; busca solamente el camino mas corto en lugar de calcular rutas a TODOS los nodos (Dijkstra).
 
 *💡 Nota: En cualquiera de los casos, si el MiniPi detecta algún obstáculo o algo que impidiera seguir con su ejecución, se frena y espera que se le indiquen los pasos a seguir desde la consola de desarrollador.*
 
