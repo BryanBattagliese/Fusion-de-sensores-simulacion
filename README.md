@@ -21,7 +21,6 @@ El MiniPi puede trabajar de dos diferentes maneras:
 ### 🅰️ - "Acatando ordenes concretas"
 
 Se le pasa al robot MiniPi una serie de instrucciones simples, que debe ejecutar en serie. Una vez finalizado, muestra lo que pudo mapear (es capaz de mostrar el mapeo en "tiempo real") 📍.
-En caso de no poder cumplir con alguna de sus instrucciones, frena y pregunta por consola que debe hacer.
 
 ![Simulación Mapeo](images/image3.PNG)
 
